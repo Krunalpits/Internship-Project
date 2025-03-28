@@ -1,0 +1,62 @@
+
+.user-item {
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    margin-bottom: 16px;
+    padding: 16px;
+    background: #fafafa;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+  }
+  
+  .user-item:hover {
+    background-color: #f0f0f0;
+    transform: translateY(-2px);
+  }
+  
+  .user-name {
+    font-weight: 500;
+    font-size: 18px;
+    cursor: pointer;
+    color: #007BFF;
+  }
+  
+  .user-name:hover {
+    text-decoration: underline;
+  }
+  
+  .user-email {
+    display: block;
+    font-size: 14px;
+    color: #666;
+    margin-top: 4px;
+  }
+  
+  .user-details {
+    margin-top: 12px;
+    font-size: 14px;
+    background-color: #eef3f7;
+    padding: 12px;
+    border-radius: 4px;
+    line-height: 1.4;
+  }
+  
+  .user-details p {
+    margin-bottom: 8px;
+  }
+  
+  /*  responsive design for big screens */
+  @media (min-width: 600px) {
+    .user-item {
+      padding: 20px;
+    }
+    .user-name {
+      font-size: 20px;
+    }
+    .user-email {
+      font-size: 16px;
+    }
+    .user-details {
+      font-size: 15px;
+    }
+  }
+  

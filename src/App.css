@@ -1,0 +1,144 @@
+
+.container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 24px;
+  font-weight: 700;
+  color: #222;
+}
+
+/* Controls Section */
+.controls {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.controls input[type="text"] {
+  padding: 10px 14px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+}
+
+.sort-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.sort-controls label {
+  font-size: 14px;
+  color: #555;
+}
+
+.sort-controls select {
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+}
+
+/* Responsive styling for Controls */
+@media (min-width: 600px) {
+  .controls {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .controls input[type="text"] {
+    max-width: 300px;
+  }
+  .sort-controls {
+    flex-direction: row;
+    gap: 16px;
+  }
+  .sort-controls label {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* User List Styles */
+.user-list {
+  list-style: none;
+  padding: 0;
+}
+
+/* User Item Styles */
+.user-item {
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  margin-bottom: 16px;
+  padding: 16px;
+  background: #fafafa;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.user-item:hover {
+  background-color: #f0f0f0;
+  transform: translateY(-2px);
+}
+
+.user-name {
+  font-weight: 500;
+  font-size: 18px;
+  cursor: pointer;
+  color: #007BFF;
+}
+
+.user-name:hover {
+  text-decoration: underline;
+}
+
+.user-email {
+  display: block;
+  font-size: 14px;
+  color: #666;
+  margin-top: 4px;
+}
+
+.user-details {
+  margin-top: 12px;
+  font-size: 14px;
+  background-color: #eef3f7;
+  padding: 12px;
+  border-radius: 4px;
+  line-height: 1.4;
+}
+
+.user-details p {
+  margin-bottom: 8px;
+}
+.loader-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; 
+}
+/* Desktop adjustments  */
+@media (min-width: 600px) {
+  .user-item {
+    padding: 20px;
+  }
+  .user-name {
+    font-size: 20px;
+  }
+  .user-email {
+    font-size: 16px;
+  }
+  .user-details {
+    font-size: 15px;
+  }
+}

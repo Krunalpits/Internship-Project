@@ -1,0 +1,69 @@
+
+.controls {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 24px;
+  }
+  
+  .controls input[type="text"] {
+    padding: 10px 14px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+  }
+  
+  .sort-controls {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .sort-controls label {
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .sort-controls select {
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+  }
+  
+  /* for Responsive view */
+  @media (min-width: 600px) {
+    .controls {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .controls input[type="text"] {
+      max-width: 300px;
+    }
+    /* .sort-controls {
+      flex-direction: row;
+      align-items: center;
+      gap: 16px;
+    } */
+
+    .sort-controls p {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+    }
+    .sort-controls label {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 8px;
+      margin: 0;
+    }
+    .sort-controls select {
+      width: auto;
+    }
+  }
+  
