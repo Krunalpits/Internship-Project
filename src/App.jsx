@@ -59,7 +59,7 @@ const App = () => {
 // filter user method or function.
   const filteredUsers = getFilteredAndSortedUsers();
 
-  // Toggle detailed view for viewimg a user
+  // Toggle detailed view for viewimg a user.
   const handleUserClick = (userId) => {
     setSelectedUserId(prevId => (prevId === userId ? null : userId));
   };
