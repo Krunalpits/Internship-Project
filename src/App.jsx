@@ -56,6 +56,7 @@ const App = () => {
     return filtered;
   };
 
+// filter user method or function.
   const filteredUsers = getFilteredAndSortedUsers();
 
   // Toggle detailed view for viewimg a user
